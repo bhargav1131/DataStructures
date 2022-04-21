@@ -99,6 +99,7 @@ void counting(struct node *head){
     printf("\n %d number of elements is present in the list", count);
 }
 
+//___________________________________________
 int search(struct node *head, int val){
 int flag = -1;
 int var = 1;
@@ -109,15 +110,16 @@ int var = 1;
     while (ptr != NULL)
     {
         if(ptr -> data == val){
+            printf("\n%d found at position %d", val, var);
             flag = 1;
             break;
         }
         var++;
         ptr = ptr -> link;         
     }    
-    printf("\n%d found at position %d", val, var);
 return flag;    
 }
+//___________________________________________
     
 int main()
 {
@@ -138,7 +140,7 @@ int main()
     // printData(head);
     // counting(head);
 
-    int receive = search(head, 9);
+    int receive = search(head, 5);
     printf("\n%2d", receive);
     return 0;
 }

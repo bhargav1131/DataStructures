@@ -22,6 +22,16 @@ void print(struct node *head)
     }
 }
 
+struct node *add_at_end(struct node *head, int info)
+{
+    struct node *temp = malloc(sizeof(struct node));
+    temp->data = info;
+    temp->link = NULL;
+
+    head->link = temp;
+    return temp;
+}
+
 struct node *add_at_beg(struct node *head, int data)
 {
     struct node *temp = malloc(sizeof(struct node));
@@ -75,7 +85,7 @@ int main()
     // head = insert_at_pos(head, -1, 3);
 
     print(head);
-    head = delete_beg(head);
+    // head = delete_beg(head);
     print(head);
     return 0;
 }
