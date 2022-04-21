@@ -1,0 +1,4 @@
+* Binary Search Tree validation is recursive
+* insertion is non-recursive.
+* deletion is recursive.
+* searching is recursive.
