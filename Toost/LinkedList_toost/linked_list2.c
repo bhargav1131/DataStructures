@@ -100,7 +100,8 @@ void counting(struct node *head){
 }
 
 //___________________________________________
-int search(struct node *head, int val){
+int search(struct node *head, int val)
+{
 int flag = -1;
 int var = 1;
     if(head == NULL){
